@@ -1,0 +1,252 @@
+/* styles.css */
+
+/* Basic reset and styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+header {
+  padding: 6px;
+  text-align: left;
+  font-size: 1em;
+  margin-top: -89px; /* Move header up */
+}
+
+.site-name {
+  color: white;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.meta-logo {
+  display: block;
+  margin: 0 auto;
+  width: 350px; /* Adjust size as needed */
+}
+
+
+
+
+
+
+
+
+body {
+  padding-top: 75px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Search Container Styling */
+.search-container {
+  width: 80%; /* Use percentage for responsiveness */
+  max-width: 600px; /* Limit the maximum width for large screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px; /* Padding to prevent content from touching the edges */
+  box-sizing: border-box;
+}
+
+/* Input Search Bar Styling */
+input#search-bar {
+  width: 100%; /* Use full width of the container */
+  height: 45px;
+  padding: 0 50px 0 20px; /* Adjust padding for icon space */
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  transition: border-color 0.35s ease, color 0.35s ease;
+}
+
+input#search-bar:focus {
+  border-color: #008ABF;
+  color: #008ABF;
+}
+
+input#search-bar::placeholder {
+  transition: opacity 0.45s ease;
+}
+
+/* Search Icon Styling */
+.search-icon {
+  width: 24px; /* Size the icon appropriately */
+  height: 24px;
+  position: relative;
+  left: -30px; /* Position the icon inside the input */
+  cursor: pointer; /* Change cursor to pointer to indicate it is clickable */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .search-container {
+      width: 90%; /* Adjust width for smaller screens */
+      padding: 0 10px; /* Less padding on smaller screens */
+  }
+
+  input#search-bar {
+      height: 40px; /* Reduce height on smaller screens */
+      font-size: 0.9rem; /* Reduce font size on smaller screens */
+      padding: 0 40px 0 15px; /* Adjust padding for icon space */
+  }
+
+  .search-icon {
+      width: 20px; /* Smaller icon on smaller screens */
+      height: 20px;
+      left: -25px; /* Adjust icon position */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trending-bots {
+  margin: 20px;
+  text-align: center;
+  margin: 6vmax;
+}
+
+/* Footer styling */
+.nav-footer {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #000000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; /* Ensure the container also spans the full width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 10px; /* Optional: add padding to the sides if needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-icon {
+  width: 26px;
+}
+
+/* Footer text */
+.nav-footer .nav-text {
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: auto;
+  padding: 5px;
+  border-color: white;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+
+}
+
+.card {
+  width: 30px; /* increased card width */
+  max-width: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-color: white;
+  flex: 0 1 22%; /* Each card takes up roughly 22% of the row width */
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 110px; /* increased image height */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  border-color: white;
+}
+
+.card span {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  border: 3px solid #ffffff; /* add white border */
+  border-radius: 10px; /* add curviness */
+}
+
+.card img {
+  border-radius: 10px 10px 0 0; /* update image border radius */
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 25%; /* Allocate 25% width to each card */
+  margin: 9px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .cards {
+    justify-content: center; /* Center the cards horizontally */
+    width: 33.33%; /* 3 cards per row */
+      }
+
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Adjust width for very small screens */
+  }
+}
+
+}
